@@ -2,17 +2,18 @@ package adapter_v1;
 
 public class PhonePe {
 
-    YesBankAPI yesBankAPI;
+    BankAPI bankAPI;
     FastTag fastTag;
     PhonePeLoan phonePeLoan;
 
-    PhonePe(){
-        yesBankAPI = new YesBankAPI();
+
+    PhonePe(BankAPI bankAPI){
+        this.bankAPI = bankAPI;
         fastTag = new FastTag();
         phonePeLoan = new PhonePeLoan();
     }
     public boolean rechargeFastTag(int amount){
-        int response = fastTag.fastTagRecharge(200, yesBankAPI);
+        int response = fastTag.fastTagRecharge(200, bankAPI);
         if(response == 1){
             System.out.println("FastTag is successfully recharged");
             return true;
@@ -22,13 +23,18 @@ public class PhonePe {
     }
 
     public boolean availLoan(int loanAmount){
-        int response = phonePeLoan.availPhonePeLoan(500, yesBankAPI);
+        int response = phonePeLoan.availPhonePeLoan(500, bankAPI);
         if(response == 1){
             System.out.println("You can avail the loan.");
             return true;
         }
         System.out.println("You are not eligible for the loan");
         return false;
+
+    }
+
+    public void phonePeTrasfer(int amount){
+        bankAPI.transfer(100, 345666);
 
     }
     

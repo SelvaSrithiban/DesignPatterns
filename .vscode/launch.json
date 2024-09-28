@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Client",
             "request": "launch",
+            "mainClass": "adapter_v0.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
             "mainClass": "simpleFactory.Client",
             "projectName": "DesignPatterns_4d594c17"
         },

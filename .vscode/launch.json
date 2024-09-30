@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Client",
             "request": "launch",
+            "mainClass": "decarator.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
             "mainClass": "adapter_v1.Client",
             "projectName": "DesignPatterns_4d594c17"
         },

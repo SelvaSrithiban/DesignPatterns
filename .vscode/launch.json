@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Lambdas",
+            "request": "launch",
+            "mainClass": "lambdasAndStreams.Lambdas",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "BookLibraryDemo",
+            "request": "launch",
+            "mainClass": "exceptions.customExceptions.BookLibraryDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "ThreadException",
             "request": "launch",
             "mainClass": "exceptions.checkedExceptions.ThreadException",

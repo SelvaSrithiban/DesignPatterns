@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreadException",
+            "request": "launch",
+            "mainClass": "exceptions.checkedExceptions.ThreadException",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "ArrayExceptions",
+            "request": "launch",
+            "mainClass": "exceptions.unCheckedExceptions.ArrayExceptions",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingDemo",
+            "request": "launch",
+            "mainClass": "exceptions.unCheckedExceptions.ExceptionHandlingDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandlingDemo",
+            "request": "launch",
+            "mainClass": "exceptions.checkedExceptions.ExceptionHandlingDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.bigFactorialCalculator.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "NumberPrinterApp",
+            "request": "launch",
+            "mainClass": "multithreading.numberPrinter.NumberPrinterApp",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Lightroom",
+            "request": "launch",
+            "mainClass": "multithreading.lightroom.Lightroom",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Ab",
+            "request": "launch",
+            "mainClass": "temp.Ab",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "WeatherStation",
             "request": "launch",
             "mainClass": "observer.WeatherStation",

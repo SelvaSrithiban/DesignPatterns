@@ -4,9 +4,9 @@ public class CurrentStatsDisplay implements Observer{
     private float temperature;
     private float humidity;
     private float pressure;
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public CurrentStatsDisplay(Subject weatherData){
+    public CurrentStatsDisplay(WeatherData weatherData){
         this.weatherData = weatherData;
     }
     @Override

@@ -6,7 +6,7 @@ public class BigFactorialCalculator implements Runnable{
 
     int number;
 
-    BigFactorialCalculator(int number){
+    public BigFactorialCalculator(int number){
         this.number = number;
     }
 

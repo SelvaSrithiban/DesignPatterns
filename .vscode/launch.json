@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AdderDemo",
+            "request": "launch",
+            "mainClass": "multithreading.callable.AdderDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "ExecutorFrameworkDemo",
+            "request": "launch",
+            "mainClass": "multithreading.executorFramework.ExecutorFrameworkDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "dsa_Problems.iterations.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "Lambdas",
             "request": "launch",
             "mainClass": "lambdasAndStreams.Lambdas",

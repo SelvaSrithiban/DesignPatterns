@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountEvenNumbers",
+            "request": "launch",
+            "mainClass": "dsa_Problems.prefixSum.CountEvenNumbers",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Equilibrium",
+            "request": "launch",
+            "mainClass": "dsa_Problems.prefixSum.Equilibrium",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "RangeSumQuery",
+            "request": "launch",
+            "mainClass": "dsa_Problems.prefixSum.RangeSumQuery",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "AdderDemo",
             "request": "launch",
             "mainClass": "multithreading.callable.AdderDemo",

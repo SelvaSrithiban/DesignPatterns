@@ -24,18 +24,21 @@ public class CountEvenNumbers {
 
     static void findEquilibriumIndex(int[] a, int[][] q){
         int pc[] = prefixCount(a);
+        int ans[] = new int[q.length];
 
         for(int i = 0; i < q.length; i++){
             int l = q[i][0];
             int r = q[i][1];
-            int ans = 0;
+            int temp = 0;
 
             if(l == 0){
-                ans = pc[r];
+                temp = pc[r];
+                ans[i] = temp;
             }else{
-                ans = pc[r] - pc[l-1];
+                temp = pc[r] - pc[l-1];
+                ans[i] = temp;
             }
-            System.out.println(ans);
+            System.out.println(temp);
         }
         return;
         //TC: O(n+q)

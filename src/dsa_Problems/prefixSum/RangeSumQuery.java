@@ -15,6 +15,14 @@ public class RangeSumQuery {
 
     static void optimizedQuery(int[] a, int[][] q){
         int[] ps = prefixSum(a);
+
+        /*
+        for (int i = 0; i < n; i++) {
+            int ls = B[i][0];
+            int rs = B[i][1];
+            ans[i] = ps[rs] - (ls > 0 ? ps[ls - 1] : 0);   //using ternary operator
+        }
+        */
         for(int i = 0; i < q.length; i++){
             int l = q[i][0];
             int r = q[i][1];

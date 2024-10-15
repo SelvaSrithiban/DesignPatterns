@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MasterSlaveDemo",
+            "request": "launch",
+            "mainClass": "multithreading.threadSynchronization.masterSlave.MasterSlaveDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.threadSynchronization.atomicDataTypes.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "DeadlockExample",
+            "request": "launch",
+            "mainClass": "multithreading.threadSynchronization.deadlock.DeadlockExample",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.threadSynchronization.mutex.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.threadSynchronization.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "dsa_Problems.prefixSum.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "CountEvenNumbers",
             "request": "launch",
             "mainClass": "dsa_Problems.prefixSum.CountEvenNumbers",

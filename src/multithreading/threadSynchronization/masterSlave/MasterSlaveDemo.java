@@ -20,7 +20,21 @@ public class MasterSlaveDemo {
         }
         );
 
+        Thread t2 = new Thread(()->{
+            for(int i = 0; i <= 100; i++){
+                m.addData("Row " + i);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+        );
+
         t1.start(); //master has started doing it's word.
+        t2.start();
         s.startSync();
     }
     

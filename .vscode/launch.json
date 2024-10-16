@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindLeadersRight",
+            "request": "launch",
+            "mainClass": "dsa_Problems.carryForward.FindLeadersRight",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "MaxProfit",
             "request": "launch",
             "mainClass": "dsa_Problems.carryForward.MaxProfit",

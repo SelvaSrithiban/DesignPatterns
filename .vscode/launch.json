@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxProfit",
+            "request": "launch",
+            "mainClass": "dsa_Problems.carryForward.MaxProfit",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "FindLeadersLeft",
+            "request": "launch",
+            "mainClass": "dsa_Problems.carryForward.FindLeadersLeft",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "CountAGPairs",
+            "request": "launch",
+            "mainClass": "dsa_Problems.carryForward.CountAGPairs",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "MasterSlaveDemo",
             "request": "launch",
             "mainClass": "multithreading.threadSynchronization.masterSlave.MasterSlaveDemo",

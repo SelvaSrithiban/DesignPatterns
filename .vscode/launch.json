@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PrintMaxSumSubArrays",
+            "request": "launch",
+            "mainClass": "dsa_Problems.subArrays.PrintMaxSumSubArrays",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "printSumOfSubArrays",
+            "request": "launch",
+            "mainClass": "dsa_Problems.subArrays.printSumOfSubArrays",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "PrintSubArrays",
+            "request": "launch",
+            "mainClass": "dsa_Problems.subArrays.PrintSubArrays",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "FindLeadersRight",
             "request": "launch",
             "mainClass": "dsa_Problems.carryForward.FindLeadersRight",

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountGoodSubArrays",
+            "request": "launch",
+            "mainClass": "dsa_Problems.subArrays.CountGoodSubArrays",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "SubArraysTo2DArray",
+            "request": "launch",
+            "mainClass": "dsa_Problems.subArrays.SubArraysTo2DArray",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "FeedSubArraysTo2DArray",
+            "request": "launch",
+            "mainClass": "dsa_Problems.subArrays.FeedSubArraysTo2DArray",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "PrintMaxSumSubArrays",
             "request": "launch",
             "mainClass": "dsa_Problems.subArrays.PrintMaxSumSubArrays",

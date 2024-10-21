@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.semaphore.producerConsumerProblem_final.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.semaphore.producerConsumerProblem_2.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "producerConsumer.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "multithreading.semaphore.producerConsumerProblem_1.Client",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "SemaphoreApproach",
+            "request": "launch",
+            "mainClass": "multithreading.semaphore.SemaphoreApproach",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "SemaphoreDemo",
+            "request": "launch",
+            "mainClass": "multithreading.semaphore.SemaphoreDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "CountGoodSubArrays",
             "request": "launch",
             "mainClass": "dsa_Problems.subArrays.CountGoodSubArrays",

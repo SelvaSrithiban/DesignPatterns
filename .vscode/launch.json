@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BoxDemo",
+            "request": "launch",
+            "mainClass": "generics.three.BoxDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "BoxDemo",
+            "request": "launch",
+            "mainClass": "generics.two.BoxDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "BoxDemo",
+            "request": "launch",
+            "mainClass": "generics.one.BoxDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "Client",
             "request": "launch",
             "mainClass": "multithreading.semaphore.producerConsumerProblem_final.Client",

@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindMaxSubArrayOfLengthK",
+            "request": "launch",
+            "mainClass": "dsa_Problems.slidingWindow.FindMaxSubArrayOfLengthK",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "PrintSumofAllSubArrays",
+            "request": "launch",
+            "mainClass": "dsa_Problems.contributionTechnique.PrintSumofAllSubArrays",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "generics.inheritance_generics.Main",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "GenericMethods",
+            "request": "launch",
+            "mainClass": "generics.GenericMethods",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "BoxDemo",
             "request": "launch",
             "mainClass": "generics.three.BoxDemo",

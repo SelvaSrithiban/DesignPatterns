@@ -25,6 +25,9 @@ public class BoxDemo {
        BoxTwo<Integer, List<String>> b5 = new BoxTwo<>(5, new ArrayList<>(Arrays.asList("Apple", "Orange")));
        System.out.println(b5);
 
+       List<String> fruits = b5.getY();
+       System.out.println(fruits);
+
 
 
 

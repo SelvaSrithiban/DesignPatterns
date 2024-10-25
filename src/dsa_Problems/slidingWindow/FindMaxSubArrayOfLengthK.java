@@ -64,12 +64,43 @@ public class FindMaxSubArrayOfLengthK {
         return ans;
     }
 
+    //TC : O(n)
+    //SC : O(n)
+
+    public static int optimized2(int[] A, int k){
+        System.out.println("Optimized-2 Force Output");
+        int n = A.length;
+        int s = 0;
+        int e = k-1;
+
+        //Sum of 1st window
+        int sum = 0;
+        for(int i = 0; i <= e; i++){
+            sum += A[i];
+        }
+        int ans = sum;
+        s++;
+        e++;
+
+        while(e < n){
+            //find the sum of sub array from s to e
+            sum = sum - A[s-1] + A[e];
+            //check if sum is greater than ans
+            if(sum > ans){
+                ans = sum;
+            }
+            s++;
+            e++;
+        }
+        return ans;
+    }
 
     public static void main(String[] args) {
 
         int[] A = {2,4,-1,3,5};
         System.out.println(brutForce(A, 3));
         System.out.println(optimized1(A, 3));
+        System.out.println(optimized2(A, 3));
         
     }
 

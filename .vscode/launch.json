@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SubArrayWithLeastAverage",
+            "request": "launch",
+            "mainClass": "dsa_Problems.slidingWindow.SubArrayWithLeastAverage",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "FindMinSwaps",
             "request": "launch",
             "mainClass": "dsa_Problems.slidingWindow.FindMinSwaps",

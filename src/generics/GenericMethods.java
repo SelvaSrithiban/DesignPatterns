@@ -15,9 +15,9 @@ public class GenericMethods {
 
     }
 
-    public static <T extends Comparable> int incrementNumber(T number){
+    /*public static <T extends Comparable> int incrementNumber(T number){
         return 5;
-    }
+    }*/
 
     public static <T extends Number> T incrementNumber(T number){
         return (T) Integer.valueOf(number.intValue() + 1);

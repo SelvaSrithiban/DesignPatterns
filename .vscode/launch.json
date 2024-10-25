@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UnboundedWildcardExample",
+            "request": "launch",
+            "mainClass": "generics.UnboundedWildcardExample",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "UpperBoundExample",
+            "request": "launch",
+            "mainClass": "generics.UpperBoundExample",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "SubArrayWithLeastAverage",
             "request": "launch",
             "mainClass": "dsa_Problems.slidingWindow.SubArrayWithLeastAverage",

@@ -7,7 +7,7 @@ public class PrintSpiralFormOf2DArray {
         int n = A.length;
         int r = 0;
         int c = 0;
-        
+
         while(n > 1){
 
             //print n-1 elements of oth row(Left to Right)
@@ -49,6 +49,8 @@ public class PrintSpiralFormOf2DArray {
         return;
 
     }
+    //TC - O(n^2)
+    //SC - O(1)
     
     public static void main(String[] args) {
         int[][] A = {{1,2,3},

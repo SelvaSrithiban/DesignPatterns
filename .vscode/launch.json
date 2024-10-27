@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindSumOfSubMatrices",
+            "request": "launch",
+            "mainClass": "twoDArrays.FindSumOfSubMatrices",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "PrintSpiralFormOf2DArray",
             "request": "launch",
             "mainClass": "twoDArrays.PrintSpiralFormOf2DArray",

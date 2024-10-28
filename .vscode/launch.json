@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BrowserHistorySortedDemo",
+            "request": "launch",
+            "mainClass": "collection_iterators.BrowserHistorySortedDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "BrowserHistoryDemo",
             "request": "launch",
             "mainClass": "collection_iterators.BrowserHistoryDemo",

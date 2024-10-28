@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BrowserHistoryDemo",
+            "request": "launch",
+            "mainClass": "collection_iterators.BrowserHistoryDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "BrowserHistoryDemo",
+            "request": "launch",
+            "mainClass": "collection_Collections.BrowserHistoryDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "FindSumOfSubMatrices",
             "request": "launch",
             "mainClass": "twoDArrays.FindSumOfSubMatrices",

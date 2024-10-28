@@ -1,5 +1,7 @@
 package twoDArrays;
 
+import java.util.Collection;
+
 public class PrintSpiralFormOf2DArray {
 
     public static void printSpiralForm(int[][] A){
@@ -51,6 +53,8 @@ public class PrintSpiralFormOf2DArray {
     }
     //TC - O(n^2)
     //SC - O(1)
+
+    Collection
     
     public static void main(String[] args) {
         int[][] A = {{1,2,3},

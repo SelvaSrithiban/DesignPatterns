@@ -1,4 +1,4 @@
-package interviewProblems;
+package dsa_Problems.interviewProblems;
 
 public class ZeroQueries_1 {
 

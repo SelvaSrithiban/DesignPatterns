@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SuffixMax",
+            "request": "launch",
+            "mainClass": "dsa_Problems.interviewProblems.SuffixMax",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "PrefixMax",
+            "request": "launch",
+            "mainClass": "dsa_Problems.interviewProblems.PrefixMax",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "ZeroQueries_1",
             "request": "launch",
             "mainClass": "interviewProblems.ZeroQueries_1",

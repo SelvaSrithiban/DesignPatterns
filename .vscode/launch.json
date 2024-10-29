@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProductArrayPuzzle",
+            "request": "launch",
+            "mainClass": "dsa_Problems.interviewProblems.ProductArrayPuzzle",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "SuffixMultiplication",
+            "request": "launch",
+            "mainClass": "dsa_Problems.interviewProblems.SuffixMultiplication",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "PrefixMultiplication",
+            "request": "launch",
+            "mainClass": "dsa_Problems.interviewProblems.PrefixMultiplication",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "RainWaterTrapping",
+            "request": "launch",
+            "mainClass": "dsa_Problems.interviewProblems.RainWaterTrapping",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "SuffixMax",
             "request": "launch",
             "mainClass": "dsa_Problems.interviewProblems.SuffixMax",

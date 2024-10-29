@@ -16,7 +16,7 @@ public class UnboundedWildcardExample {
         
         // Only null is allowed
         list.add(null);
-        list.add("String"); 
+        //list.add("String"); 
     }
 
     public static void main(String[] args) {

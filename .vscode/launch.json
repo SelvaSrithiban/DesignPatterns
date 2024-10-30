@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SortPlayers",
+            "request": "launch",
+            "mainClass": "lambdasAndStreams.SortPlayers",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "ProductArrayPuzzle",
             "request": "launch",
             "mainClass": "dsa_Problems.interviewProblems.ProductArrayPuzzle",

@@ -51,7 +51,8 @@ public class TwoUniqueNumbers_two {
 
         return ans;
     }
-    
+    //TC : O(1)
+    //SC : O(1)
     public static void main(String[] args) {
         //int[] A = {186,256,102,377,186,377};
         //int[] A = {16,32,16,32,8,4};

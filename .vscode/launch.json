@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindMaxOfIANDJ",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.FindMaxOfIANDJ",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "TwoUniqueNumbers_two",
             "request": "launch",
             "mainClass": "dsa_Problems.bitManipulation.TwoUniqueNumbers_two",

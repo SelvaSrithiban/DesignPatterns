@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SortPlayers {
 
@@ -24,6 +25,13 @@ public class SortPlayers {
 
         //Using Lambda Expressions
         Collections.sort(players,(a,b)->a.age-b.age);
+
+        List<String> sortedPlayers = players.stream()
+                                        .sorted((x,y)->(x.rank - y.rank))
+                                        .map(x->x.name)
+                                        .collect(Collectors.toList());
+
+        System.out.println(sortedPlayers);
     }
     
 }

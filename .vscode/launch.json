@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoUniqueNumbers_two",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.TwoUniqueNumbers_two",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "UniqueNumber",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.UniqueNumber",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "CheckSetBits",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.CheckSetBits",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "CheckIthBit",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.CheckIthBit",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "CheckEvenOdd",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.CheckEvenOdd",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "StreamsDemo",
+            "request": "launch",
+            "mainClass": "lambdasAndStreams.streams.StreamsDemo",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "SortPlayers",
             "request": "launch",
             "mainClass": "lambdasAndStreams.SortPlayers",

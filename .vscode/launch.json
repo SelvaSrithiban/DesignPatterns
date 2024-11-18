@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KTHSymbol",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.KTHSymbol",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "ValidParanthesis",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.ValidParanthesis",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "TowerOfHanoe",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.TowerOfHanoe",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "MathPower",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.MathPower",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.Factorial",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "FindNNaturalNumbers",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.FindNNaturalNumbers",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "Sample",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.Sample",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "FindTwoMissingNumber",
+            "request": "launch",
+            "mainClass": "dsa_Problems.bitManipulation.FindTwoMissingNumber",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "FindMaxOfIANDJ",
             "request": "launch",
             "mainClass": "dsa_Problems.bitManipulation.FindMaxOfIANDJ",

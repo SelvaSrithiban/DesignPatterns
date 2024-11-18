@@ -15,13 +15,14 @@ public class FindMaxOfIANDJ {
                     cnt++;
                 }
             }
+            //System.out.println("The " + i + "th bit count value is " + cnt);
 
             //Check if cnt >= 2
             if(cnt >= 2){
                 ans |= (1<<i);
             //set the element to 0
             for(int j = 0; j < n; j++){
-                if((A[j] & (1<<j)) == 0){
+                if((A[j] & (1<<i)) == 0){
                     A[j] = 0;
                 }
             }
@@ -29,6 +30,8 @@ public class FindMaxOfIANDJ {
         }
         return ans;
     }
+    //TC : O(n)
+    //SC : O(1)
     
     public static void main(String[] args) {
         int[] A = {13,18,23,56,81,20,4,24,93};

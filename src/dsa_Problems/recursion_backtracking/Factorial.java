@@ -1,4 +1,4 @@
-package dsa_Problems.recursion;
+package dsa_Problems.recursion_backtracking;
 
 import java.nio.channels.Pipe.SourceChannel;
 

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountSubsetWithSumK",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion_backtracking.CountSubsetWithSumK",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "NdigitNumbersIncreasingOrder",
+            "request": "launch",
+            "mainClass": "dsa_Problems.recursion.NdigitNumbersIncreasingOrder",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "KTHSymbol",
             "request": "launch",
             "mainClass": "dsa_Problems.recursion.KTHSymbol",

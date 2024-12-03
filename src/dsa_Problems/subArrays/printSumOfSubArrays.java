@@ -41,7 +41,7 @@ public class printSumOfSubArrays {
 
     public static void main(String[] args) {
             int[] A = {5,9,2};      
-            brutForce(A);
+            //brutForce(A);
             optimized(A);
             
     }

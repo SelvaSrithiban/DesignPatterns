@@ -62,6 +62,8 @@ public class PrintMaxSumSubArrays {
 
         return ans;
     }
+    //TC: O(N)
+    //SC: O(1)
 
     public static void main(String[] args) {
 

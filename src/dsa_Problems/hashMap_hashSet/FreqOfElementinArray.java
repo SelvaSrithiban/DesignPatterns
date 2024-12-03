@@ -1,6 +1,8 @@
 package dsa_Problems.hashMap_hashSet;
 
-public class FreqOfQinA {
+import java.util.HashMap;
+
+public class FreqOfElementinArray {
     
     public int[] solve(int[] A, int[] B) {
         int n = A.length;

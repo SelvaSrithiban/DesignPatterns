@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class CheckPairSum {
 
     public static int optimized(int A, int[] B){
-        
+
         //if the array is null
         if(B == null){
             return 0;
@@ -29,6 +29,9 @@ public class CheckPairSum {
         }
        return 0;
     }
+
+    //TC: O(n)
+    //SC: O(n)
     
     public static void main(String[] args) {
         

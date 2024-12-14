@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CSNegativeAndPositiveDigits",
+            "request": "launch",
+            "mainClass": "dsa_Problems.countSort_mergeSort.CSNegativeAndPositiveDigits",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "CSNegativeAndPositiveDigits",
+            "request": "launch",
+            "mainClass": "CSNegativeAndPositiveDigits",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "CountSortNegativeAndPostiveDigits",
+            "request": "launch",
+            "mainClass": "CountSortNegativeAndPostiveDigits",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "CountSubsetWithSumK",
             "request": "launch",
             "mainClass": "dsa_Problems.recursion_backtracking.CountSubsetWithSumK",

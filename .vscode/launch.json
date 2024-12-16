@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountPairsInTwoArrays",
+            "request": "launch",
+            "mainClass": "dsa_Problems.countSort_mergeSort.CountPairsInTwoArrays",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "InversionCount",
+            "request": "launch",
+            "mainClass": "dsa_Problems.countSort_mergeSort.InversionCount",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "dsa_Problems.countSort_mergeSort.MergeSort",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "MergeArrayWithSME",
+            "request": "launch",
+            "mainClass": "dsa_Problems.countSort_mergeSort.MergeArrayWithSME",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "CSNegativeAndPositiveDigits",
             "request": "launch",
             "mainClass": "dsa_Problems.countSort_mergeSort.CSNegativeAndPositiveDigits",

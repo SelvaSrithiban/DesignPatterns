@@ -1,4 +1,4 @@
-package dsa_Problems.countSort&mergeSort;
+package dsa_Problems.sortingAlgorithms&mergeSort;
 
 public class CountSortPositiveDigits {
     public int[] smallestNumber(int[] A) {

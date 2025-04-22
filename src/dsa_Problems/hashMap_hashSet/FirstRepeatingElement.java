@@ -11,19 +11,19 @@ public class FirstRepeatingElement {
         }
 
         HashSet<Integer> hs = new HashSet<>();
-        int temp = -1;
+        int ans = -1;
 
         //Traverse from right to left in array
         for(int i = A.length-1; i >= 0; i--){
 
             if(hs.contains(A[i])){
-                temp = A[i];
+                ans = A[i];
             }else{
                 hs.add(A[i]);
             }
         }
 
-        return temp;
+        return ans;
     }
 
     public static void main(String[] args) {

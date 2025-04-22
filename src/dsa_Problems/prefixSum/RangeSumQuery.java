@@ -1,5 +1,7 @@
 package dsa_Problems.prefixSum;
 
+import java.util.ArrayList;
+
 public class RangeSumQuery {
 
     static int[] prefixSum(int[] a){
@@ -11,6 +13,48 @@ public class RangeSumQuery {
         }
         return ps;
         //TC --> O(N)
+    }
+
+    static ArrayList<Long> prefixSum_1(ArrayList<Integer> A) {
+
+        ArrayList<Long> ps = new ArrayList<>();
+
+        ps.add(A.get(0).longValue());
+
+        for(int i = 1; i < A.size(); i++){
+            ps.add((ps.get(i-1) + A.get(i)));
+        }
+
+        return ps;
+    }
+
+    static ArrayList<Long> RangeSumQuery(ArrayList<Integer> A, ArrayList<ArrayList<Integer>> B){
+
+        //check null
+        if(A == null || A.isEmpty()){
+            return null;
+        }
+
+        //create a output array
+        ArrayList<Long> ans = new ArrayList<>(B.size());
+
+        //Create a prefix sum array
+        ArrayList<Long> ps = prefixSum_1(A);
+
+        //Traverse through the Queries ArrayList
+        for(int i = 0; i < B.size(); i++){
+
+            int l = B.get(i).get(0);
+            int r = B.get(i).get(1);
+
+            //check if l is 0
+            if(l == 0){
+                ans.add(ps.get(r));
+            }else{
+                ans.add(ps.get(r)-ps.get(l-1));
+            }
+        }
+        return ans;
     }
 
     static void optimizedQuery(int[] a, int[][] q){

@@ -1,32 +1,42 @@
 package dsa_Problems.hashMap_hashSet;
 
-import java.util.HashMap;
+import java.util.HashSet;
 
 public class CheckPairDifference {
-    
-     public int solve(int[] A, int B) {
+
+    static boolean checkPairDiff(int[] A, int B){
+
+        //Check for the edge case
+        if(A == null || A.length == 1){
+            return false;
+        }
 
         int n = A.length;
-        final int mod = 1000000007;
-        int count = 0;
+        HashSet<Integer> set = new HashSet<>();
 
-        //if the array is null or Size is 1
-        if(A == null || n == 1){
-            return 0;
+        //Traverse through the array and fill the hashset
+        for(int a : A){
+            set.add(a);
         }
 
-        HashMap<Integer, Integer> map = new HashMap<>();
-        //Traverse through the array
-        for(int i = 0; i < n; i++){
-           count = (count + map.getOrDefault(A[i]+B, 0) + map.getOrDefault(A[i] - B, 0)) % mod;
-           
-           //Increase the value of key already present if not 0
-           map.put(A[i], map.getOrDefault(A[i], 0) + 1);
+        //Traverse through the array and check target value
+        for(int num : A){
+            int target = num - B;
+            if(set.contains(target)){
+                return true;
+            }
         }
 
-        return count % mod;
+        return false;
     }
 
-    //TC : O(n)
-    //SC : O(n)
+
+    public static void main(String[] args) {
+        
+        int[] A = {3,5,1,2};
+        int B = 4;
+
+        System.out.println(checkPairDiff(A, B));
+    }
+
 }

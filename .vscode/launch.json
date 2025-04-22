@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LastOccurenceOfElement",
+            "request": "launch",
+            "mainClass": "dsa_Problems.binarysearch.LastOccurenceOfElement",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "FirstOccurenceOfElement",
+            "request": "launch",
+            "mainClass": "dsa_Problems.binarysearch.FirstOccurenceOfElement",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "FindElementInSortedArray",
+            "request": "launch",
+            "mainClass": "dsa_Problems.binarysearch.FindElementInSortedArray",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "DescendingOrder",
+            "request": "launch",
+            "mainClass": "comparator.DescendingOrder",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
+            "name": "MyComparator",
+            "request": "launch",
+            "mainClass": "comparator.MyComparator",
+            "projectName": "DesignPatterns_4d594c17"
+        },
+        {
+            "type": "java",
             "name": "CountPairsInTwoArrays",
             "request": "launch",
             "mainClass": "dsa_Problems.countSort_mergeSort.CountPairsInTwoArrays",

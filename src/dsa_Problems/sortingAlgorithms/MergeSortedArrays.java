@@ -1,4 +1,4 @@
-package dsa_Problems.countSort_mergeSort;
+package dsa_Problems.sortingAlgorithms;
 
 public class MergeSortedArrays {
 

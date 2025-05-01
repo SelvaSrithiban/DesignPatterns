@@ -1,4 +1,4 @@
-package dsa_Problems.singleLinkedList;
+package dsa_Problems.LinkedListl;
 
 class ListNode {
         public int val;

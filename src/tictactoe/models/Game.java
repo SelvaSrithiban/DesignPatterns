@@ -13,7 +13,7 @@ public class Game {
     List<WinningStrategy> winningStrategies;
 
     private Game(Builder builder){
-        this.board = new Board();
+        this.board = new Board(builder.size);
         this.players = builder.players;
         this.moves = new ArrayList<>();
         this.currentPlayer = null;
@@ -67,6 +67,10 @@ public class Game {
 
     public static Builder getBuilder(){
         return new Builder();
+    }
+
+    public void display(){
+        board.displayBoard();
     }
 
     public static class Builder{

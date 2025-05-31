@@ -22,12 +22,12 @@ public class Client {
         //start the game
         Game game = gameController.startGame(3,players,winningStrategies);
         //display the contents
-        gameController.display();
+        gameController.display(game);
         //play the game
         while(gameController.checkState().equals(GameState.INPROGRESS)){
             //make a move
             gameController.makeMove();
-            gameController.display();
+            //gameController.display();
         }
         //check if any winner
         if(gameController.checkState().equals(GameState.WIN)){

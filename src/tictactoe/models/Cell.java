@@ -4,13 +4,20 @@ public class Cell {
     private int row;
     private int col;
     private CellState cellState;
+    private Symbol symbol;
+
+    Cell(int row, int col){
+        this.row = row;
+        this.col = col;
+        cellState = CellState.EMPTY;
+        this.symbol = null;
+    }
     public CellState getCellState() {
         return cellState;
     }
     public void setCellState(CellState cellState) {
         this.cellState = cellState;
     }
-    private Symbol symbol;
     public int getRow() {
         return row;
     }
@@ -28,6 +35,14 @@ public class Cell {
     }
     public void setSymbol(Symbol symbol) {
         this.symbol = symbol;
+    }
+
+    public void display(){
+        if(cellState.equals(CellState.EMPTY)){
+            System.out.print("| - |");
+        }else{
+            System.out.println("| " + symbol.getSymbol() + " |");
+        }
     }
 
 }

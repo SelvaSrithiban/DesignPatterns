@@ -15,8 +15,8 @@ public class GameController {
                 .build();
     }
 
-    public void display(){
-
+    public void display(Game game){
+        game.display();
     }
 
     public GameState checkState(){

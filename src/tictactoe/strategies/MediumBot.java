@@ -1,6 +1,6 @@
 package tictactoe.strategies;
 
-public class DifficultBotPlaying implements BotPlayingLevel{
+public class MediumBot implements BotPlayingLevel{
 
     @Override
     public void makeMove() {

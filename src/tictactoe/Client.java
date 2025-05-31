@@ -23,7 +23,7 @@ public class Client {
         Game game = gameController.startGame(3,players,winningStrategies);
         //display the contents
         gameController.display(game);
-        //play the game
+        //play the gamegot
         while(gameController.checkState().equals(GameState.INPROGRESS)){
             //make a move
             gameController.makeMove();

@@ -17,6 +17,7 @@ public class EasyBot implements BotPlayingLevel{
                 if(cell.getCellState().equals(CellState.EMPTY)){
                     cell.setCellState(CellState.OCCUPIED);
                     cell.setSymbol(player.getSymbol());
+                    break;
                 }
             }
         }

@@ -73,6 +73,11 @@ public class Game {
         board.displayBoard();
     }
 
+    public boolean checkWinner(Move move){
+        
+        return false;
+    }
+
     public static class Builder{
         private int size;
         private List<Player> players;

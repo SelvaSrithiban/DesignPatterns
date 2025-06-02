@@ -5,6 +5,6 @@ import tictactoe.models.Move;
 
 public interface WinningStrategy {
 
-    boolean checkWinner(Board board, Move move);
+    public boolean checkWinner(Board board, Move move);
     
 }

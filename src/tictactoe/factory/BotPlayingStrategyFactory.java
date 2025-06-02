@@ -13,7 +13,7 @@ public class BotPlayingStrategyFactory {
             return new EasyBot();
         }else if(botDifficultyLevel.equals(BotDifficultyLevel.MEDIUM)){
             return new MediumBot();
-        }else if(botDifficultyLevel.equals(BotDifficultyLevel.HARD){
+        }else if(botDifficultyLevel.equals(BotDifficultyLevel.HARD)){
             return new HardBot();
         }else{
             return null;

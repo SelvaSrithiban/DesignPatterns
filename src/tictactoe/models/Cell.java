@@ -38,10 +38,10 @@ public class Cell {
     }
 
     public void display(){
-        if(cellState.equals(CellState.EMPTY)){
+        if(symbol == null){
             System.out.print("| - |");
         }else{
-            System.out.println("| " + symbol.getSymbol() + " |");
+            System.out.print("| " + symbol.getSymbol() + " |");
         }
     }
 

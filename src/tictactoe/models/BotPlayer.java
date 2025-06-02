@@ -20,4 +20,10 @@ public class BotPlayer extends Player{
    public void setDifficultyLevel(BotDifficultyLevel difficultyLevel) {
     this.difficultyLevel = difficultyLevel;
    }
+
+   @Override
+   public Move makeMove(Board board) {
+      // TODO Auto-generated method stub
+      return botPlayingLevel.makeMove(board, this);
+   }
 }

@@ -2,6 +2,8 @@ package tictactoe;
 
 import tictactoe.controllers.GameController;
 import tictactoe.models.*;
+import tictactoe.strategies.*;
+
 import java.util.*;
 
 public class Client {
@@ -18,21 +20,25 @@ public class Client {
 
         //create strategies
         List<WinningStrategy> winningStrategies = new ArrayList<>();
+        winningStrategies.add(new RowWinningStrategy());
+        winningStrategies.add(new ColumnWinningStrategy());
+        winningStrategies.add(new CornerWinningStrategy());
+        winningStrategies.add(new DiagonalWinningStrategy());
 
         //start the game
         Game game = gameController.startGame(3,players,winningStrategies);
         //display the contents
         gameController.display(game);
         //play the gamegot
-        while(gameController.checkState().equals(GameState.INPROGRESS)){
+        while(gameController.checkState(game).equals(GameState.INPROGRESS)){
             //make a move
-            gameController.makeMove();
-            //gameController.display();
+            gameController.makeMove(game);
+            gameController.display(game);
         }
         //check if any winner
-        if(gameController.checkState().equals(GameState.WIN)){
-            System.out.println("A player has won the game");
-        }else if(gameController.checkState().equals(GameState.DRAW)){
+        if(gameController.checkState(game).equals(GameState.WIN)){
+            System.out.println("Winner is " + gameController.getWinner(game).getName());
+        }else if(gameController.checkState(game).equals(GameState.DRAW)){
             System.out.println("Game has ended in a draw");
         }
 

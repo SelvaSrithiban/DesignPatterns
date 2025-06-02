@@ -1,10 +1,10 @@
 package tictactoe.strategies;
 
 import tictactoe.models.Board;
-import tictactoe.models.Player;
+import tictactoe.models.*;
 
 public interface BotPlayingLevel {
 
-    public void makeMove(Board board, Player player);
+    public Move makeMove(Board board, Player player);
 
 }

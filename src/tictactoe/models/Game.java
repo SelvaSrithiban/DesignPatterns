@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import tictactoe.strategies.*;
 import tictactoe.exceptions.InvalidMoveException;
+import tictactoe.exceptions.UndoException;
 
 public class Game {
     private Board board;
@@ -11,6 +12,7 @@ public class Game {
     private List<Move> moves;
     private Player currentPlayer;
     private Player nextPlayer;
+    private Player prevPlayer;
     private GameState currentState;
     Player winner;
     List<WinningStrategy> winningStrategies;
@@ -127,8 +129,11 @@ public class Game {
         //set the next player
         int idx = players.indexOf(currentPlayer);
         int nextIndex = (idx + 1) % players.size();
+        prevPlayer = currentPlayer;
         nextPlayer = players.get(nextIndex);
         currentPlayer = nextPlayer;
+
+        
 
     }
 
@@ -139,6 +144,45 @@ public class Game {
             }
         }
         return false;
+    }
+
+    public void undoMove(Game game){
+
+        //Allow if player is human
+        if(prevPlayer.getType().equals(PlayerType.HUMAN)){
+
+            //check if moves are made already
+            if(moves.isEmpty()){
+                System.out.println("No moves were made, undo opertion cannot be done");
+            }
+
+            //get the last move
+            Move lastMove = moves.get(moves.size()-1);
+
+            //set the currentPlayer
+            currentPlayer = prevPlayer;
+
+            //decrement the count in winning startegy hashmap
+            for(WinningStrategy winningStrategy : winningStrategies){
+                winningStrategy.undoMove(board, lastMove);
+            }
+
+            //remove the move from the list
+            moves.remove(lastMove);
+
+            //update the cell
+            int row = lastMove.getCell().getRow();
+            int col = lastMove.getCell().getCol();
+            Cell cell  = board.getGrid().get(row).get(col);
+            cell.setCellState(CellState.EMPTY);
+            cell.setSymbol(null);
+            
+            //update the winner and game status
+            winner = null;
+            currentState = GameState.INPROGRESS;
+        }else{
+            throw new UndoException("Bot cannot perform undo operation");
+        }
     }
 
     public static class Builder{

@@ -51,4 +51,32 @@ public class RowWinningStrategy implements WinningStrategy{
         return counts.get(sym) == board.getSize();
     }
 
+    @Override
+    public void undoMove(Board board, Move move) {
+        int row = move.getCell().getRow();  // ✅ Get column, not row
+        Symbol symbol = move.getCell().getSymbol();
+        char sym = symbol.getSymbol();
+
+        // ✅ Check if column exists
+        if (!rowCount.containsKey(row)) return;
+
+        HashMap<Character, Integer> counts = rowCount.get(row);
+
+        // ✅ Check if symbol exists in column
+        if (!counts.containsKey(sym)) return;
+
+        int currentCount = counts.get(sym);
+        
+        if (currentCount > 1) {
+            counts.put(sym, currentCount - 1);
+        } else {
+            counts.remove(sym); // Remove symbol if count reaches 0
+        }
+
+        // ✅ Clean up empty column
+        if (counts.isEmpty()) {
+            rowCount.remove(row);
+        }
+    }
+
 }

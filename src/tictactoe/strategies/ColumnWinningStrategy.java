@@ -52,4 +52,31 @@ public class ColumnWinningStrategy implements WinningStrategy{
         return counts.get(sym) == board.getSize();
     }
 
+    @Override
+    public void undoMove(Board board, Move move) {
+        // TODO Auto-generated method stub
+        int col = move.getCell().getCol();
+        Symbol symbol = move.getCell().getSymbol();
+        char sym = symbol.getSymbol();
+         
+        // Check if column exists
+        if (!colCount.containsKey(col)) return;
+        HashMap<Character, Integer> counts = colCount.get(col);
+
+        // Check if symbol count exists
+        if (!counts.containsKey(sym)) return;
+
+        int currentCount = counts.get(sym);
+        if (currentCount > 1) {
+            counts.put(sym, currentCount - 1);
+        } else {
+            counts.remove(sym); // Remove symbol when count is 0
+        }
+        
+        // Optional: Clean up the entire column if it's now empty
+        if (counts.isEmpty()) {
+            colCount.remove(col);
+        }
+    }
+
 }

@@ -33,4 +33,10 @@ public class CornerWinningStrategy implements WinningStrategy{
 
 }
 
+    @Override
+    public void undoMove(Board board, Move move) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'undoMove'");
+    }
+
 }

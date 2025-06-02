@@ -41,4 +41,33 @@ public class DiagonalWinningStrategy implements WinningStrategy{
         return isWinner;
     }
 
+    @Override
+    public void undoMove(Board board, Move move) {
+        int row = move.getCell().getRow();
+        int col = move.getCell().getCol();
+        Symbol symbol = move.getCell().getSymbol();
+        char sym = symbol.getSymbol();
+        int boardSize = board.getSize();
+
+        // Undo move on main diagonal if the move was on it
+        if (row == col && mainDiagonalCount.containsKey(sym)) {
+            int currentCount = mainDiagonalCount.get(sym);
+            if (currentCount > 1) {
+                mainDiagonalCount.put(sym, currentCount - 1);
+            } else {
+                mainDiagonalCount.remove(sym); // Clean up if count is 0
+            }
+        }
+
+        // Undo move on anti-diagonal if the move was on it
+        if ((row + col == boardSize - 1) && antiDiagonalCount.containsKey(sym)) {
+            int currentCount = antiDiagonalCount.get(sym);
+            if (currentCount > 1) {
+                antiDiagonalCount.put(sym, currentCount - 1);
+            } else {
+                antiDiagonalCount.remove(sym); // Clean up if count is 0
+            }
+        }
+    }
+
 }

@@ -38,4 +38,8 @@ public class GameController {
         return game.getWinner();
     }
 
+    public void undoMove(Game game){
+        game.undoMove(game);
+    }
+
 }

@@ -1,7 +1,10 @@
 package tictactoe.models;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Scanner;
+
 import tictactoe.strategies.*;
 import tictactoe.exceptions.InvalidMoveException;
 import tictactoe.exceptions.UndoException;
@@ -16,6 +19,7 @@ public class Game {
     private GameState currentState;
     Player winner;
     List<WinningStrategy> winningStrategies;
+    private static Scanner scanner = new Scanner(System.in);
 
     private Game(Builder builder){
         this.board = new Board(builder.size);
@@ -156,32 +160,37 @@ public class Game {
                 System.out.println("No moves were made, undo opertion cannot be done");
             }
 
-            //get the last move
-            Move lastMove = moves.get(moves.size()-1);
+            System.out.println("Do you want to undo the operation? Choose [Y/N]");
+            System.out.println("Note: Only Human player can perform undo operation, not the Bot player");
+            String undoResponse = scanner.nextLine();
+            if(undoResponse.equals("Y")){
 
-            //set the currentPlayer
-            currentPlayer = prevPlayer;
+                //get the last move
+                Move lastMove = moves.get(moves.size()-1);
 
-            //decrement the count in winning startegy hashmap
-            for(WinningStrategy winningStrategy : winningStrategies){
-                winningStrategy.undoMove(board, lastMove);
+                //set the currentPlayer
+                currentPlayer = prevPlayer;
+
+                //decrement the count in winning startegy hashmap
+                for(WinningStrategy winningStrategy : winningStrategies){
+                    winningStrategy.undoMove(board, lastMove);
+                }
+
+                //remove the move from the list
+                moves.remove(lastMove);
+
+                //update the cell
+                int row = lastMove.getCell().getRow();
+                int col = lastMove.getCell().getCol();
+                Cell cell  = board.getGrid().get(row).get(col);
+                cell.setCellState(CellState.EMPTY);
+                cell.setSymbol(null);
+                
+                //update the winner and game status
+                winner = null;
+                currentState = GameState.INPROGRESS;
+                board.displayBoard();
             }
-
-            //remove the move from the list
-            moves.remove(lastMove);
-
-            //update the cell
-            int row = lastMove.getCell().getRow();
-            int col = lastMove.getCell().getCol();
-            Cell cell  = board.getGrid().get(row).get(col);
-            cell.setCellState(CellState.EMPTY);
-            cell.setSymbol(null);
-            
-            //update the winner and game status
-            winner = null;
-            currentState = GameState.INPROGRESS;
-        }else{
-            throw new UndoException("Bot cannot perform undo operation");
         }
     }
 
@@ -203,13 +212,31 @@ public class Game {
         }
 
         public void validate(){
-            // At max 1 Bot in the game
-
             // Players size = dimension - 1
-            if(players.size() != size - 1){
+            int playersCount = players.size();
+            if(playersCount != size - 1){
                 throw new RuntimeException("Invalid players count");
             }
+            // At max 1 Bot in the game
+            int botCount = 0;
+            for(Player player : players){
+                if(player.getType().equals(PlayerType.BOT)){
+                    botCount++;
+                }
+            }
+            if(botCount > 1){
+                throw new RuntimeException("Number of Bot players is greater than 1. Can't start the game.");
+            }
+            
             //Every player should have separate symbol
+            HashSet<Character> set = new HashSet<>();
+            for(Player player : players){
+                if(set.contains(player.getSymbol().getSymbol())){
+                    throw new RuntimeException("The symbol " + player.getSymbol().getSymbol() + " is already chosen by other player.");
+                }else{
+                    set.add(player.getSymbol().getSymbol());
+                }
+            }
         }
 
         public Game build(){

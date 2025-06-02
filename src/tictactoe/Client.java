@@ -7,7 +7,7 @@ import tictactoe.strategies.*;
 import java.util.*;
 
 public class Client {
-    private static Scanner scanner = new Scanner(System.in);
+    //private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         //Gamecontroller should be a single object
         GameController gameController = new GameController();
@@ -18,6 +18,7 @@ public class Client {
         players.add(new HumanPlayer(1, "Selva", new Symbol('X', "Green"), PlayerType.HUMAN));
         //create bot player
         players.add(new BotPlayer(1, "Robot", new Symbol('O', "Red"), PlayerType.BOT,BotDifficultyLevel.EASY));
+        //players.add(new BotPlayer(2, "Robot2", new Symbol('O', "Red"), PlayerType.BOT,BotDifficultyLevel.EASY));
 
         //create strategies
         List<WinningStrategy> winningStrategies = new ArrayList<>();
@@ -36,15 +37,10 @@ public class Client {
             gameController.makeMove(game);
             gameController.display(game);
             //undo
-            System.out.println("Do you want to undo the operation? Choose [Y/N]");
-            System.out.println("Note: Only Human player can perform undo operation, not the Bot player");
-            String undoResponse = scanner.nextLine();
-            if(undoResponse.equals("Y")){
-                gameController.undoMove(game);
-                gameController.display(game);
-            }else{
+            gameController.undoMove(game);
+            /* }else{
                 System.out.println("Undo Operation is cancelled by the user.");
-            }
+            }*/
         }
         //check if any winner
         if(gameController.checkState(game).equals(GameState.WIN)){

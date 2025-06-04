@@ -4,16 +4,17 @@ import java.time.LocalDateTime;
 
 public class Ticket {
 
-    private String id;
+    private int id;
+    private String number;
     private Vehicle vehicle;
     private LocalDateTime entryTime;
     private Operator operator;
     private Gate gate;
     private ParkingSlots slot;
-    public String getId() {
+    public int getId() {
         return id;
     }
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
     public Vehicle getVehicle() {
@@ -45,5 +46,11 @@ public class Ticket {
     }
     public void setSlot(ParkingSlots slot) {
         this.slot = slot;
+    }
+    public String getNumber() {
+        return number;
+    }
+    public void setNumber(String number) {
+        this.number = number;
     }
 }

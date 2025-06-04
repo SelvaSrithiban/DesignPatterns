@@ -2,19 +2,12 @@ package ParkingLot.models;
 
 import java.util.List;
 
-public class Gate {
+public class Gate extends BaseModel {
       
-    private String id;
     private int number;
     private GateStatus status;
     private List<Operator> operators;
     private GateType gateType;
-    public String getId() {
-        return id;
-    }
-    public void setId(String id) {
-        this.id = id;
-    }
     public int getNumber() {
         return number;
     }

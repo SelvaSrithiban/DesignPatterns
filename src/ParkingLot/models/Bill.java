@@ -3,9 +3,8 @@ package ParkingLot.models;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Bill {
+public class Bill extends BaseModel{
     
-    private String id;
     private Ticket ticket;
     private LocalDateTime exitTime;
     private Operator operator;
@@ -13,12 +12,6 @@ public class Bill {
     private float amount;
     private List<Payment> payment;
 
-    public String getId() {
-        return id;
-    }
-    public void setId(String id) {
-        this.id = id;
-    }
     public Ticket getTicket() {
         return ticket;
     }

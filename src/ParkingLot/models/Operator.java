@@ -2,16 +2,11 @@ package ParkingLot.models;
 
 import java.time.LocalDateTime;
 
-public class Operator {
-    private int id;
+public class Operator extends BaseModel {
+   
     private String name;
     private LocalDateTime dateOfJoining;
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
+    
     public String getName() {
         return name;
     }

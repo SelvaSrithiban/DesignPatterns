@@ -1,0 +1,40 @@
+package leetCode.easy;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class RomanToInt {
+    class Solution {
+    public int romanToInt(String s) {
+        if (s == null || s.length() == 0) return 0;
+
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+
+        int total = 0;
+        int n = s.length();
+
+        for (int i = 0; i < n - 1; i++) {
+            int curr = map.get(s.charAt(i));
+            int next = map.get(s.charAt(i + 1));
+
+            if (curr < next) {
+                total -= curr;  // subtraction case
+            } else {
+                total += curr;
+            }
+        }
+
+        // Add the value of the last character
+        total += map.get(s.charAt(n - 1));
+
+        return total;
+    }
+}
+}
